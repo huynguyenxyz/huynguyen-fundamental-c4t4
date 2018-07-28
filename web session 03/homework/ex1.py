@@ -4,6 +4,7 @@ class Post(Document):
     title = StringField()
     author = StringField()
     content = StringField()
+    meta = {'collection':'posts'}
     
 import mlab
 mlab.connect()
